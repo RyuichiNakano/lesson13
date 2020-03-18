@@ -1,10 +1,352 @@
-@charset "utf-8"
-@import //google fonts読み込み
+@charset "UTF-8"; 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sen|Vollkorn+SC&display=swap);
+
+//font-family: 'Vollkorn SC', serif;
+//font-family: 'Sen', sans-serif;
+//font-family: 'Noto Sans JP', sans-serif;
 
 html{
     font-size: 62.5%;
 }
 
-$color1 :#ffffff;//メインカラー
-$color2 :#fcfffb;//カテゴリーbackground-color
-$color3 :#112d16;//文字色
+$main1 :#ffffff;//メインカラー
+$category1 :#fcfffb;//カテゴリーbackground-color
+$letter1 :#112d16;//文字色
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #ffffff;
+    height: 75px;
+    width: 100%;
+    
+    & .header_navi{
+        padding-top: 5px;
+        margin-right: 45px;
+    }
+    
+    & .header_navi_ul{
+        width: 100%;
+        justify-content: flex-end;
+        list-style: none;
+        display: flex;
+    }
+    
+    & .header_btn{
+        opacity: 0.5;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 14px;
+        margin: 2.5px;
+        text-align: center;
+    }
+    
+    & .twitter,.instagram,.github{
+        padding: 5px 3px;
+        margin-left: 2px;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    
+    & a{
+        font-family: sen;
+    }
+    
+    & .header_navi_ul a{
+        text-decoration: none;
+        color: $letter1;
+    }
+    
+    & .twitter a{
+        color: #429eed;
+    }
+    
+    & .instagram a{
+        color:#b177aa;
+    }
+    
+    & .github a{
+        color: black;
+    }
+    
+     & a:hover{
+        color: gray;
+    }
+}
+
+.namepage{
+    background-color: $main1;
+    height: 630px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    margin: 0;
+    
+    & h1{
+        text-align: center;
+        font-family: sen;
+        margin: 0;
+        letter-spacing: 1.5px;
+        font-size: 32px;
+    }
+    
+    & p{
+        text-align: center;
+        font-size: 27px;
+        color: black;
+        opacity: 0.3;
+        font-family: sen;
+        letter-spacing: 1.5px;
+    }
+}
+
+.works_name,.skills_name,.about_name,.contact_name{
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    font-family: sen;
+    margin-bottom: 50px;
+}
+
+.works{
+    background-color: $category1;
+    width: 90%;
+    height: 800px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    
+    .works_p{
+        height: 170px;
+        width: 30%;
+        background-color: black;
+        margin: 0 auto;
+        border: 1px solid white;
+        
+    }
+    
+}
+
+.skills{
+    background-color: $category1;
+    height: 370px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    
+    & .coding,.edit,.frame{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    & h3,p{
+        text-align: center;
+        font-family: Noto Sans JP;
+    }
+    
+    & h3{
+        font-size: 22px;
+    }
+    & h4{
+        text-align: center;
+    }
+    
+    & .fa{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    & p{
+        font-size: 15px;
+        width: 95%;
+        
+    }
+    
+}
+
+
+.about{
+    background-color: yellow;
+    height: 420px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $category1;
+    
+    & .description{
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    & p{
+        font-family: Noto Sans JP; 
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+}
+
+.contact{
+    margin:0 auto;
+    width: 100%;
+    background-color: $category1;
+    height: 100px;
+
+    & p,h4{
+    text-align: center;
+    margin-bottom: 0;
+    }
+}
+
+table {
+  margin: auto;
+  
+    & td{
+        border: none;
+    }
+  
+    & a{
+      border-radius: 4px;
+      display: inline-block;
+      height: 50px;
+      text-decoration: none;
+      width: 150px; 
+    }
+
+    & span {
+      color: black;
+      font-weight: bold;
+      line-height: 50px;
+    }
+
+    & .button {
+      background: white;
+      border-radius: 4px;
+      height: 50px;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      transition: all 0.6s ease;
+      box-shadow: 5px 5px black
+    }
+
+    & .text {
+      transition: all 0.6s ease;
+    }
+
+    & a:hover {
+      cursor: pointer;
+    }
+    
+    & a:hover .button {
+      opacity: 0.7; 
+    }
+    
+    & a:hover #btnbtn {
+      transform: translate(5px, 5px);
+      box-shadow: none;
+    }
+}
+
+.top{
+    width: 100%;
+    margin: 0 auto;
+    
+    & h3,h4{
+        text-align: center;
+    }
+    
+    & h3{
+        font-size: 14px;
+        margin-bottom: 0;
+        font-family: Noto Sans JP;
+    }
+    
+    & h4{
+        line-height: 1px;
+    }
+    
+    & .fa{
+        font-size: 20px;
+    }
+    
+    & a{
+        text-decoration: none;
+        color: black;
+    
+    :hover{
+        opacity: 0.5;
+       }
+    }
+}
+
+
+
+footer{
+    background-color: #fff;
+    height: 50px;
+    
+    & .footer_navi{
+        padding-top: 5px;
+        margin-right: 45px;
+    }
+    
+    & .footer_navi_ul{
+        width: 100%;
+        justify-content: flex-start;
+        list-style: none;
+        display: flex;
+        margin-left: 30px;
+    }
+    
+    & .footer_btn{
+        opacity: 0.5;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 14px;
+        margin: 2.5px;
+        text-align: center;
+    }
+    
+    & .twitter,.instagram,.github{
+        padding: 5px 3px;
+        margin-left: 2px;
+        text-align: center;
+    }
+    
+    & a{
+        font-family: sen;
+    }
+    
+    & .footer_navi_ul a{
+        text-decoration: none;
+        color: $letter1;
+    }
+    
+    & .twitter a{
+        color: #429eed;
+    }
+    
+    & .instagram a{
+        color:#b177aa;
+    }
+    
+    & .github a{
+        color: black;
+    }
+    
+     & a:hover{
+        color: gray;
+    }
+    
+    & .copy{
+        margin-top: 5px;
+        opacity: 0.3;
+        font-size: 10px;
+        font-family: sen;
+        text-align: right;
+        width: 70%;
+    }
+}
+

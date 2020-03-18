@@ -1,36 +1,230 @@
-/*
-Error: Invalid CSS after "@charset "utf-8"": expected selector or at-rule, was "@import //googl..."
-        on line 2 of style.scss
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP|Sen|Vollkorn+SC&display=swap);
+html {
+  font-size: 62.5%; }
 
-1: @charset "utf-8"
-2: @import //google fonts読み込み
-3: 
-4: html{
-5:     font-size: 62.5%;
-6: }
-7: 
+body {
+  margin: 0; }
 
-Backtrace:
-style.scss:2
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:42:in `parse'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@charset \"utf-8\"\": expected selector or at-rule, was \"@import //googl...\"\A         on line 2 of style.scss\A \A 1: @charset \"utf-8\"\A 2: @import //google fonts読み込み\A 3: \A 4: html{\A 5:     font-size: 62.5%;\A 6: }\A 7: "; }
+header {
+  background-color: #ffffff;
+  height: 75px;
+  width: 100%; }
+  header .header_navi {
+    padding-top: 5px;
+    margin-right: 45px; }
+  header .header_navi_ul {
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
+    display: flex; }
+  header .header_btn {
+    opacity: 0.5;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    margin: 2.5px;
+    text-align: center; }
+  header .twitter, header .instagram, header .github {
+    padding: 5px 3px;
+    margin-left: 2px;
+    text-align: center;
+    background-color: #ffffff; }
+  header a {
+    font-family: sen; }
+  header .header_navi_ul a {
+    text-decoration: none;
+    color: #112d16; }
+  header .twitter a {
+    color: #429eed; }
+  header .instagram a {
+    color: #b177aa; }
+  header .github a {
+    color: black; }
+  header a:hover {
+    color: gray; }
+
+.namepage {
+  background-color: #ffffff;
+  height: 630px;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  margin: 0; }
+  .namepage h1 {
+    text-align: center;
+    font-family: sen;
+    margin: 0;
+    letter-spacing: 1.5px;
+    font-size: 32px; }
+  .namepage p {
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    opacity: 0.3;
+    font-family: sen;
+    letter-spacing: 1.5px; }
+
+.works_name, .skills_name, .about_name, .contact_name {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  font-family: sen;
+  margin-bottom: 50px; }
+
+.works {
+  background-color: #fcfffb;
+  width: 90%;
+  height: 800px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+  .works .works_p {
+    height: 170px;
+    width: 30%;
+    background-color: black;
+    margin: 0 auto;
+    border: 1px solid white; }
+
+.skills {
+  background-color: #fcfffb;
+  height: 370px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+  .skills .coding, .skills .edit, .skills .frame {
+    margin: 0 auto;
+    width: 100%; }
+  .skills h3, .skills p {
+    text-align: center;
+    font-family: Noto Sans JP; }
+  .skills h3 {
+    font-size: 22px; }
+  .skills h4 {
+    text-align: center; }
+  .skills .fa {
+    font-size: 50px;
+    text-align: center; }
+  .skills p {
+    font-size: 15px;
+    width: 95%; }
+
+.about {
+  background-color: yellow;
+  height: 420px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fcfffb; }
+  .about .description {
+    margin: 0 auto;
+    width: 90%; }
+  .about p {
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    letter-spacing: 0.5px; }
+
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fcfffb;
+  height: 100px; }
+  .contact p, .contact h4 {
+    text-align: center;
+    margin-bottom: 0; }
+
+table {
+  margin: auto; }
+  table td {
+    border: none; }
+  table a {
+    border-radius: 4px;
+    display: inline-block;
+    height: 50px;
+    text-decoration: none;
+    width: 150px; }
+  table span {
+    color: black;
+    font-weight: bold;
+    line-height: 50px; }
+  table .button {
+    background: white;
+    border-radius: 4px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    transition: all 0.6s ease;
+    box-shadow: 5px 5px black; }
+  table .text {
+    transition: all 0.6s ease; }
+  table a:hover {
+    cursor: pointer; }
+  table a:hover .button {
+    opacity: 0.7; }
+  table a:hover #btnbtn {
+    transform: translate(5px, 5px);
+    box-shadow: none; }
+
+.top {
+  width: 100%;
+  margin: 0 auto; }
+  .top h3, .top h4 {
+    text-align: center; }
+  .top h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: Noto Sans JP; }
+  .top h4 {
+    line-height: 1px; }
+  .top .fa {
+    font-size: 20px; }
+  .top a {
+    text-decoration: none;
+    color: black; }
+    .top a :hover {
+      opacity: 0.5; }
+
+footer {
+  background-color: #fff;
+  height: 50px; }
+  footer .footer_navi {
+    padding-top: 5px;
+    margin-right: 45px; }
+  footer .footer_navi_ul {
+    width: 100%;
+    justify-content: flex-start;
+    list-style: none;
+    display: flex;
+    margin-left: 30px; }
+  footer .footer_btn {
+    opacity: 0.5;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    margin: 2.5px;
+    text-align: center; }
+  footer .twitter, footer .instagram, footer .github {
+    padding: 5px 3px;
+    margin-left: 2px;
+    text-align: center; }
+  footer a {
+    font-family: sen; }
+  footer .footer_navi_ul a {
+    text-decoration: none;
+    color: #112d16; }
+  footer .twitter a {
+    color: #429eed; }
+  footer .instagram a {
+    color: #b177aa; }
+  footer .github a {
+    color: black; }
+  footer a:hover {
+    color: gray; }
+  footer .copy {
+    margin-top: 5px;
+    opacity: 0.3;
+    font-size: 10px;
+    font-family: sen;
+    text-align: right;
+    width: 70%; }
+
+/*# sourceMappingURL=style.css.map */

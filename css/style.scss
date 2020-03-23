@@ -13,14 +13,486 @@ $main1 :#ffffff;//メインカラー
 $category1 :#fcfffb;//カテゴリーbackground-color
 $letter1 :#112d16;//文字色
 
-body{
-    margin: 0;
+.mobile-menu-icon{
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    position: absolute;
+    top:10px;
+    left: 295px;
+    padding: 0 15px;
+    
+    & > span{
+        background-color: black;
+        width: 35px;
+        height: 2px;
+        display: block;
+        margin-bottom: 9px;
+        transition: transform 0.4s;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
+
+
+.toggle_btn{
+    
+    display: none;
+    
+    .toggle_btn_ul{
+        list-style: none;
+        color: white;
+        font-family: sen;
+        letter-spacing: 1.0px;
+        background-color: black;
+        opacity: 0.3;
+        font-size: 17px;
+        padding: 20px 15px 0 15px;
+        margin-bottom: 0;
+    
+        & > li{
+            :hover{
+                opacity: 0.5;
+                color: pink;
+            }
+        
+        &:nth-child(4){
+            padding-bottom: 5px;
+            margin-bottom: 0;
+    
+        }
+        }
+  }
+}
+
+.menu-open{
+    
+    
+    .mobile-menu-icon{
+        & > span{
+            background-color: black;
+            
+            &:nth-child(1){
+                transform: translateY(11px) rotate(135deg);
+            }
+            
+            &:nth-child(2){
+                transform: translateX(-18px) scaleX(0);
+            }
+            
+            &:nth-child(3){
+                transform: translateY(-11px) rotate(-135deg);
+            }
+    }
+  }
+}
+
+
+body{
+    margin: 0;
+    
+    
+}
+
+header{
+    
+    background-color: #ffffff;
+    height: 75px;
+    width: 100%;
+    
+    & .header_navi{
+        padding-top: 5px;
+        margin-right: 45px;
+    }
+    
+    & .header_navi_ul{
+        width: 100%;
+        justify-content: flex-start;
+        list-style: none;
+        display: flex;
+    }
+    
+    & .header_btn{
+        display: none;
+        opacity: 0.5;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 14px;
+        margin: 2.5px;
+        text-align: center;
+    }
+    
+    & .twitter,.instagram,.github{
+        padding: 5px 3px;
+        margin-left: 2px;
+        text-align: center;
+        background-color: #ffffff;
+        font-size: 25px;
+    }
+    
+    & a{
+        font-family: sen;
+    }
+    
+    & .header_navi_ul a{
+        text-decoration: none;
+        color: $letter1;
+    }
+    
+    & .twitter a{
+        color: #429eed;
+        margin-left: 10px;
+    }
+    
+    & .instagram a{
+        color:#b177aa;
+    }
+    
+    & .github a{
+        color: black;
+    }
+    
+     & a:hover{
+        color: gray;
+    }
+}
+
+.namepage{
+    background-color: $main1;
+    height: 630px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    margin: 0;
+    
+    & h1{
+        text-align: center;
+        font-family: sen;
+        margin: 0;
+        letter-spacing: 1.5px;
+        font-size: 32px;
+    }
+    
+    & p{
+        text-align: center;
+        font-size: 27px;
+        color: black;
+        opacity: 0.3;
+        font-family: sen;
+        letter-spacing: 1.5px;
+    }
+}
+
+.works_name,.skills_name,.about_name,.contact_name{
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    font-family: sen;
+    margin-bottom: 50px;
+}
+
+#works{
+    background-color: $category1;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+    
+    .works_box{
+        width: 29%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    img{
+        max-width: 100%;
+        display: block;
+        vertical-align: bottom;
+        object-fit: cover;
+    }
+    
+    .works_text{
+        display: none;
+        margin-top: 5px;
+        
+        & h2{
+            font-size: 10px;
+            color: black;
+            letter-spacing: 1px;
+        }
+        
+        & p{
+            font-size: 10px;
+            color: black;
+        }
+    }
+}
+
+    a:hover {
+
+    .works_text{
+        display: block;
+        width: 100%;
+         }
+}
+
+    
+
+.skills{
+    background-color: $category1;
+    height: auto;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    
+    & .coding,.edit,.frame{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    & h3,p{
+        text-align: center;
+        font-family: Noto Sans JP;
+    }
+    
+    & h3{
+        font-size: 22px;
+    }
+    & h4{
+        text-align: center;
+    }
+    
+    & .fa{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    & p{
+        font-size: 15px;
+        width: 95%;
+        
+    }
+    
+}
+
+
+.about{
+    background-color: yellow;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $category1;
+    
+    & .description{
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    & p{
+        font-family: Noto Sans JP; 
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+}
+
+.contact_btn{
+    margin-bottom: 10px;
+}
+
+.contact{
+    margin:0 auto;
+    width: 100%;
+    background-color: $category1;
+    height: auto;
+
+    & p,h4{
+    text-align: center;
+    margin-bottom: 0;
+    }
+}
+
+table {
+  margin: auto;
+  
+    & td{
+        border: none;
+    }
+  
+    & a{
+      border-radius: 4px;
+      display: inline-block;
+      height: 50px;
+      text-decoration: none;
+      width: 150px; 
+    }
+
+    & span {
+      color: black;
+      font-weight: bold;
+      line-height: 50px;
+    }
+
+    & .button {
+      background: white;
+      border-radius: 4px;
+      height: 50px;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      transition: all 0.6s ease;
+      box-shadow: 5px 5px black
+    }
+
+    & .text {
+      transition: all 0.6s ease;
+    }
+
+    & a:hover {
+      cursor: pointer;
+    }
+    
+    & a:hover .button {
+      opacity: 0.7; 
+    }
+    
+    & a:hover #btnbtn {
+      transform: translate(5px, 5px);
+      box-shadow: none;
+    }
+}
+
+.top{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+    & h3,h4{
+        text-align: center;
+    }
+    
+    & h3{
+        font-size: 14px;
+        margin-bottom: 0;
+        font-family: Noto Sans JP;
+    }
+    
+    & h4{
+        line-height: 1px;
+    }
+    
+    & .fa{
+        font-size: 20px;
+    }
+    
+    & a{
+        text-decoration: none;
+        color: black;
+    
+    :hover{
+        opacity: 0.5;
+       }
+    }
+}
+
+
+
+footer{
+    background-color: #fff;
+    height: 50px;
+    margin-top: 25px;
+    
+    & .footer_navi{
+        padding-top: 5px;
+        margin-right: 45px;
+    }
+    
+    & .footer_navi_ul{
+        width: 90%;
+        justify-content: flex-start;
+        list-style: none;
+        display: flex;
+        margin-left: 30px;
+    }
+    
+    & .footer_btn{
+        opacity: 0.5;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 14px;
+        margin: 2.5px;
+        display: none;
+        text-align: center;
+    }
+    
+    & .twitter,.instagram,.github{
+        padding: 5px 3px;
+        margin-left: 2px;
+        text-align: center;
+        justify-content: flex-start;
+        font-size: 25px;
+    }
+    
+    & a{
+        font-family: sen;
+    }
+    
+    & .footer_navi_ul a{
+        text-decoration: none;
+        color: $letter1;
+    }
+    
+    & .twitter a{
+        color: #429eed;
+    }
+    
+    & .instagram a{
+        color:#b177aa;
+    }
+    
+    & .github a{
+        color: black;
+    }
+    
+     & a:hover{
+        color: gray;
+    }
+    
+    & .copy{
+        margin-top: 25px;
+        opacity: 0.3;
+        font-size: 10px;
+        font-family: sen;
+        text-align: right;
+        width: 65%;
+    }
+}
+
+//ここから下はPCサイト
+
+
+@media(min-width:550px){
+    
+    
 header{
     background-color: #ffffff;
     height: 75px;
     width: 100%;
+    
+    .mobile-menu-icon{
+        visibility:hidden;
+    }    
     
     & .header_navi{
         padding-top: 5px;
@@ -41,6 +513,7 @@ header{
         padding: 5px 14px;
         margin: 2.5px;
         text-align: center;
+        display: inline-block;
     }
     
     & .twitter,.instagram,.github{
@@ -48,6 +521,7 @@ header{
         margin-left: 2px;
         text-align: center;
         background-color: #ffffff;
+        font-size: 15px;
     }
     
     & a{
@@ -182,10 +656,16 @@ header{
     
     & p{
         font-family: Noto Sans JP; 
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing: 0.5px;
     }
 }
+
+
+.contact_btn{
+    margin-bottom: 0;
+}
+
 
 .contact{
     margin:0 auto;
@@ -252,6 +732,7 @@ table {
 .top{
     width: 100%;
     margin: 0 auto;
+    margin-top: 0;
     
     & h3,h4{
         text-align: center;
@@ -286,6 +767,7 @@ table {
 footer{
     background-color: #fff;
     height: 50px;
+    margin-top: 20px;
     
     & .footer_navi{
         padding-top: 5px;
@@ -307,12 +789,14 @@ footer{
         padding: 5px 14px;
         margin: 2.5px;
         text-align: center;
+        display: inline-block;
     }
     
     & .twitter,.instagram,.github{
         padding: 5px 3px;
         margin-left: 2px;
         text-align: center;
+        font-size:15px;
     }
     
     & a{
@@ -349,4 +833,4 @@ footer{
         width: 70%;
     }
 }
-
+}//media

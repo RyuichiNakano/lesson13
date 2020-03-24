@@ -21,17 +21,17 @@
     <header>
         <div class="toggle_btn">
               <ul class="toggle_btn_ul">
-                <li>
-                  <p>Works</p>
+                <li onclick="$('html,body').animate({ scrollTop: 900 }); return false;">
+                  <a href=""><p>Works</p></a>
                 </li>
-                <li>
-                  <p>About</p>
+                <li onclick="$('html,body').animate({ scrollTop: 2800 }); return false;">
+                  <a href=""><p>Skills</p></a>
                 </li>
-                <li>
-                  <p>Skills</p>
+                <li onclick="$('html,body').animate({ scrollTop: 3600 }); return false;">
+                  <a href=""><p>About</p></a>
                 </li>
-                <li>
-                  <p>Contact</p>
+                <li onclick="$('html,body').animate({ scrollTop: 4000 }); return false;">
+                  <a href=""><p>Contact</p></a>
                 </li>
               </ul>
         </div>
@@ -44,21 +44,21 @@
 </script>
 
         
-     <button class="mobile-menu-icon"
-                onclick="document.querySelector('body').classList.toggle('menu-open');">
+     <button class="mobile-menu-icon" onclick="document.querySelector('body').classList.toggle('menu-open');">
                 <span class="span_btn"></span>
                 <span class="span_btn"></span>
                 <span class="span_btn"></span>
     </button>
+    
     <div class="header_navi">
         <ul class="header_navi_ul">
-            <li class="header_btn"><a href="">Works</a></li>
-            <li class="header_btn"><a href="">Skills</a></li>
-            <li class="header_btn"><a href="">About</a></li>
-            <li class="header_btn"><a href="">Contact</a></li>
-            <li class="twitter"><a href="https://twitter.com/ryuichi582"><i class="fa fa-twitter"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/ryuichi_yoji/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/RyuichiNakano"><i class="fa fa-github"></i></a></li>
+            <li class="header_btn" onclick="$('html,body').animate({ scrollTop: 900 }); return false;"><a href="">Works</a></li>
+            <li class="header_btn" onclick="$('html,body').animate({ scrollTop: 1500 }); return false;"><a href="">Skills</a></li>
+            <li class="header_btn" onclick="$('html,body').animate({ scrollTop: 2300 }); return false;"><a href="">About</a></li>
+            <li class="header_btn" onclick="$('html,body').animate({ scrollTop: 2500 }); return false;"><a href="">Contact</a></li>
+            <li class="twitter"><a href="https://twitter.com/ryuichi582" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/ryuichi_yoji/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/RyuichiNakano" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
     </div>    
     </header>
@@ -75,11 +75,13 @@
         
         <div id="works">
         <div class="works_box">
-            <a href="#">
-                <img src="images/kadai12.png">
+            <a href="http://ivoryfennec4.sakura.ne.jp/coding12/index.html" target="_blank">
+                <div class="img_zoom">
+                <img src="images/kadai12.png" alt="ショピングサイト模写"><!--1つめ-->
+                </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
+                <h2>SHOPPING SITE DESING(模写)</h2>
                 <P>使用スキル：HTML5、CSS3、JQuery</P>
                 <p>フレームワーク：Skelton、owlcarousel</p>
              </div>
@@ -87,97 +89,113 @@
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a href="http://ivoryfennec4.sakura.ne.jp/index.html" target="_blank">
+              <div class="img_zoom">
+                <img src="images/kadai11.png" alt="会社サイト模写"> <!--2つめ-->
+              </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
+                <h2>COMPANY SITE DESING(模写)</h2>
                 <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <p>フレームワーク：Skelton</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+             <div class="img_zoom">
+                <img src="images/lesson13_3.png" alt="カフェ模擬サイト"><!--3つめ-->
+             </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>CAFE SITE DESING（仮）</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+              <div class="img_zoom">
+                <img src="images/lesson13_4.png" alt="コーヒーサイト模擬サイト"> <!--4つめ-->
+              </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>COFFEE SHOP SITE DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+              <div class="img_zoom">    
+                <img src="images/lesson13_5.png" alt="お仕事サイト模擬サイト"> <!--5つめ-->
+              </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>CAFE SHOP SITE DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+              <div class="img_zoom">
+                <img src="images/lesson13_6.png" alt="カード決済模擬サイト"> <!--6つめ-->
+              </div>    
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>CARD SET DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+             <div class="img_zoom">    
+                <img src="images/lesson13_7.png" alt="ビル群、模擬サイト"> <!--7つめ-->
+             </div>    
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>BILDDING SITE DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+             <div class="img_zoom">    
+                <img src="images/lesson13_8.png" alt="旅行サイト模擬サイト"> <!--8つめ-->
+             </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>TRAVEL SITE DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
         </div>
         <div class="works_box">
-            <a href="">
-                <img src="images/kadai11.png">
+            <a>
+             <div class="img_zoom">    
+                <img src="images/lesson13_9.png" alt="会社模擬サイト"> <!--9つめ-->
+             </div>
           <div class="works_innner">
             <div class="works_text">
-                <h2>SHOPPING SITE DESING</h2>
-                <P>使用スキル：HTML5、CSS3、JQuery</P>
-                <p>フレームワーク：Skelton、owlcarousel</p>
+                <h2>COMPUTER SITE DESING(仮)</h2>
+                <P>これはサンプルです。</P>
+                <p>作成したものではありません。</p>
              </div>
           </div>
           </a>
@@ -249,13 +267,13 @@
 
     <footer class="fotter_navi">
         <ul class="footer_navi_ul">
-            <li class="footer_btn" onclick="$('#works').animate({ scrollTop: 0 }); return false;"><a href="">Works</a></li>
-            <li class="footer_btn"><a href="">Skills</a></li>
-            <li class="footer_btn"><a href="">About</a></li>
+            <li class="footer_btn" onclick="$('html,body').animate({ scrollTop: 900 }); return false;"><a href="">Works</a></li>
+            <li class="footer_btn" onclick="$('html,body').animate({ scrollTop: 1500 }); return false;"><a href="">Skills</a></li>
+            <li class="footer_btn" onclick="$('html,body').animate({ scrollTop: 2300 }); return false;"><a href="">About</a></li>
             <li class="footer_btn"><a href="m&#97;i&#108;t&#111;:&#98;&#108;o&#119;&#105;nb&#108;ues&#53;&#56;&#50;&#64;&#103;m&#97;&#105;l&#46;&#99;om">Contact</a></li>
-            <li class="twitter"><a href="https://twitter.com/ryuichi582"><i class="fa fa-twitter"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/ryuichi_yoji/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/RyuichiNakano"><i class="fa fa-github"></i></a></li>
+            <li class="twitter"><a href="https://twitter.com/ryuichi582" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/ryuichi_yoji/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/RyuichiNakano" target="_blank"><i class="fa fa-github"></i></a></li>
             <li class="copy">&copy; 2020 Ryuichi Nakano</li>
         </ul>
     </footer>

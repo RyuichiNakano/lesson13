@@ -67,7 +67,7 @@ $letter1 :#112d16;//文字色
             margin-bottom: 0;
     
         }
-        }
+    }
   }
 }
 
@@ -968,3 +968,37 @@ footer{
     }
 }
 }//media
+
+
+$pattern: (
+    "up": translateY(6px)
+);
+
+
+//よくわからないまま放置しているやつ
+
+@each $key, $value in $pattern{
+    .namepage.#{$key}{
+        & .item{
+            transition: $value;
+        }
+    }
+}
+
+.namepage{
+    .item{
+        transition: all 0.8s;
+        opacity: 0;
+    }
+    
+    & .item{
+        opacity: 1;
+        transform: none;
+        
+        @for $i from1 through 5{
+            &:nth-child(#{$i}){
+                transition-delay: $i * 0.1s;
+            }
+        }
+    }
+}

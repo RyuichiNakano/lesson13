@@ -623,5 +623,24 @@ footer {
       font-family: sen;
       text-align: right;
       width: 70%; } }
+.namepage.up .item {
+  transition: translateY(6px); }
+
+.namepage .item {
+  transition: all 0.8s;
+  opacity: 0; }
+.namepage .item {
+  opacity: 1;
+  transform: none; }
+  .namepage .item:nth-child(1) {
+    transition-delay: 0.1s; }
+  .namepage .item:nth-child(2) {
+    transition-delay: 0.2s; }
+  .namepage .item:nth-child(3) {
+    transition-delay: 0.3s; }
+  .namepage .item:nth-child(4) {
+    transition-delay: 0.4s; }
+  .namepage .item:nth-child(5) {
+    transition-delay: 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
